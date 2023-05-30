@@ -1,0 +1,19 @@
+<template name="admin">
+    <div id="admin">
+        <div class="background {{turn}}">
+            <div id="back-button">Back</div>
+            <h1>Admin</h1>
+            <div id="gameBoard">
+                {{#each word in words}}
+                    <div class="card {{#if word.selected}}selected{{/if}}" data-index="{{word.index}}">
+                        <div class="{{word.color}}" data-word="{{word.word}}">{{word.word}}</div>
+                    </div>
+                {{/each}}
+            </div>
+            <div class="btn-group">
+                <div class="btn js-switch-turn">Switch Turn</div>
+                <div class="btn js-shuffle-board">Shuffle Board</div>
+            </div>
+        </div>
+    </div>
+</template>

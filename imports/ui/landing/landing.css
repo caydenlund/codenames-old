@@ -1,0 +1,30 @@
+#landing h1 {
+    margin-bottom: 100px;
+}
+
+#landing .center {
+    text-align: center;
+}
+
+#landing .btn-group {
+    margin: 50px;
+    width: calc(100% - 100px);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#landing .btn {
+    padding: 20px 0;
+    background: #0D47A1;
+    width: 50%;
+    float: left;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: background .2s;
+    cursor: pointer;
+}
+
+#landing .btn:hover {
+    background: #1565C0;
+}

@@ -1,0 +1,14 @@
+<template name="board">
+    <div id="board">
+        <div class="background {{turn}}">
+            <div id="back-button">Back</div>
+            <div id="gameBoard">
+                {{#each word in words}}
+                    <div class="card" data-index="{{word.index}}" data-word="{{word.word}}">
+                        <div class="{{#if word.selected}}{{word.color}}{{/if}}">{{word.word}}</div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>

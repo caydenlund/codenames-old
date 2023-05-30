@@ -1,0 +1,79 @@
+#board .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: background .5s;
+}
+
+#board .background.red {
+    background: #f44336;
+}
+
+#board .background.blue {
+    background: #3F51B5;
+}
+
+#board #back-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    font-size: 50px;
+    color: #BDBDBD;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+#board #back-button:hover {
+    color: #424242;
+}
+
+#board #gameBoard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh 10vw;
+    overflow: hidden;
+    cursor: none;
+}
+
+#board .card {
+    font-size: 4.7vh;
+    font-weight: 500;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+#board .card div {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E0E0E0;
+    border-radius: 10px;
+    transition: background 1.5s, color 1.5s;
+}
+
+#board .card div.blue {
+    background: #7986CB;
+}
+
+#board .card div.red {
+    background: #e57373;
+}
+
+#board .card div.nothing {
+    background: #81C784;
+}
+
+#board .card div.black {
+    background: black;
+    color: white;
+}
